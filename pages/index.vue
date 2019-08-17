@@ -40,7 +40,7 @@
             </nav>
           </div>
 
-          <div class="col-6 col-md-6 d-inline-block d-lg-none ml-md-0" ><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" style="width:100px"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-12 col-md-12 d-inline-block d-lg-none ml-md-0" style="padding: 2rem"><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" style="width:100px"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
