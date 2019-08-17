@@ -1,5 +1,5 @@
 <template>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
   <div class="site-wrap"  id="home-section">
 
@@ -337,7 +337,7 @@
     
   </div> <!-- .site-wrap -->
     
-  </body>
+  </div>
 </template>
 
 <script>
