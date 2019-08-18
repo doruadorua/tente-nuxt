@@ -32,10 +32,10 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav m-auto d-none d-lg-block" style="padding-left: 0px; text-align: center;">
-                <li><a href="#home-section" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="#features-section" class="nav-link">Hizmetlerimiz</a></li>
-                <li><a href="#about-section" class="nav-link">Hakkımızda</a></li>
-                <li><a href="#contact-section" class="nav-link">İletişim</a></li>
+                <li><nuxt-link tag="a" to="#home-section" class="nav-link" exact-active-class="active">Ana Sayfa</nuxt-link></li>
+                <li><nuxt-link tag="a" to="#features-section" class="nav-link" exact-active-class="active">Hizmetlerimiz</nuxt-link></li>
+                <li><nuxt-link tag="a" to="#about-section" class="nav-link" exact-active-class="active">Hakkımızda</nuxt-link></li>
+                <li><nuxt-link tag="a" to="#contact-section" class="nav-link" exact-active-class="active">İletişim</nuxt-link></li>
               </ul>
             </nav>
           </div>
@@ -61,7 +61,7 @@
                 <h1 style="font-size:3rem">İşinizi Dijital Ortama Taşıyın!</h1>
                 <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
                 <div>
-                  <a href="#features-section" class="btn btn-primary mr-2 mb-2">Size Hizmetlerimizden Bahsedelim</a>
+                  <nuxt-link to="#features-section" tag="a" class="btn btn-primary mr-2 mb-2">Size Hizmetlerimizden Bahsedelim</nuxt-link>
                 </div>
               </div>
               
