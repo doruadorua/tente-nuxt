@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5,
     background: #C81313;
     border-color: #C81313;
     color: #fff;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
-    box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4); }
+    -webkit-box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4);
+    box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4); }
     .btn.btn-primary:hover {
       background: transparent;
       border-color: #C81313;
@@ -682,7 +682,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 210, 181, 0.8);
+    background: rgba(200, 19, 19, 0.8);
     z-index: 2;
     height: 100%;
     width: 100%;
@@ -1234,8 +1234,8 @@ h1, h2, h3, h4, h5,
     border-radius: 50%;
     display: inline-block;
     background-color: #C81313;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
-    box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4); }
+    -webkit-box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4);
+    box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4); }
     .unit-4 .unit-4-icon .icon-wrap span {
       font-size: 1.5rem;
       position: absolute;
@@ -1261,8 +1261,8 @@ h1, h2, h3, h4, h5,
     margin-bottom: 0; }
   .unit-4:hover {
     background: #C81313;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
-    box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
+    -webkit-box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4);
+    box-shadow: 0 4px 20px -5px rgba(200, 19, 19, 0.4);
     top: -7px; }
     .unit-4:hover .icon-wrap {
       background-color: #fff; }
@@ -1513,8 +1513,8 @@ h1, h2, h3, h4, h5,
     transition: .1s all ease; }
   .popular-category:hover {
     background: #C81313;
-    -webkit-box-shadow: 0 5px 30px -5px rgba(0, 210, 181, 0.5);
-    box-shadow: 0 5px 30px -5px rgba(0, 210, 181, 0.5); }
+    -webkit-box-shadow: 0 5px 30px -5px rgba(200, 19, 19, 0.5);
+    box-shadow: 0 5px 30px -5px rgba(200, 19, 19, 0.5); }
     .popular-category:hover .caption {
       color: #fff; }
     .popular-category:hover .icon {
@@ -1605,7 +1605,6 @@ h1, h2, h3, h4, h5,
 
 .social-media {
   display: inline-block;
-  float: left;
   margin-bottom: 0px;
   padding: 0; }
   .social-media li {

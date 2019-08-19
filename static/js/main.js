@@ -51,7 +51,24 @@ jQuery(document).ready(function($) {
       }
       e.preventDefault();  
       
-    });
+	});
+	
+	$(function () {
+		var currentHash = "#initial_hash"
+		$(document).scroll(function () {
+			$('.anchor_tags').each(function () {
+				var top = window.pageYOffset;
+				var distance = top - $(this).offset().top;
+				var hash = $(this).attr('href');
+				// 30 is an arbitrary padding choice, 
+				// if you want a precise check then use distance===0
+				if (distance < 30 && distance > -30 && currentHash != hash) {
+					window.location.hash = (hash);
+					currentHash = hash;
+				}
+			});
+		});
+	});
 
 		$(window).resize(function() {
 			var $this = $(this),

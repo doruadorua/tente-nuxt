@@ -15,7 +15,7 @@
     <div class="container d-none d-lg-block">
       <div class="row">
         <div class="col-12 text-center mb-1 mt-5">
-            <img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" style="width:100px">
+            <img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" :style="window.width < 992 ? 'width:60px' : 'width:100px'">
           </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
             </nav>
           </div>
 
-          <div class="col-12 col-md-12 d-inline-block d-lg-none ml-md-0" style="padding: 2rem"><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" style="width:100px"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-12 col-md-12 d-inline-block d-lg-none ml-md-0" style="padding: 2rem"><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" :style="window.width < 992 ? 'width:60px' : 'width:100px'"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
@@ -48,7 +48,7 @@
     </header>
     
 
-    <div class="site-blocks-cover">
+    <div class="site-blocks-cover" :style="window.width < 992 ? 'padding-top: 120px; height: auto;' : ''">
       <div class="container">
         <div class="row align-items-center justify-content-center">
 
@@ -74,7 +74,7 @@
     </div>  
 
 
-    <div class="site-section bg-light" id="features-section">
+    <div class="site-section bg-light" id="features-section" :style="window.width < 992 ? 'padding-top: 160px' : ''">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -227,7 +227,7 @@
     </div>
 
 
-    <div class="site-section bg-light" id="about-section">
+    <div class="site-section bg-light" id="about-section" :style="window.width < 992 ? 'padding-top: 160px' : ''">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -248,7 +248,7 @@
       </div>
     </div>
 
-    <div class="site-section" id="contact-section">
+    <div class="site-section" id="contact-section" :style="window.width < 992 ? 'padding-top: 160px' : ''">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -342,7 +342,34 @@
 
 <script>
 export default {
-  
+  data(){
+    return{
+      window: {
+        width: 0,
+        height: 0},
+    }
+  },
+  mounted () {
+    window.addEventListener('resize', this.handleResize)
+        this.handleResize()
+
+    // From testing, without a brief timeout, it won't work.
+    if (this.$route.hash) {
+      setTimeout(() => this.scrollTo(this.$route.hash), 1)
+    }
+  },
+  methods: {
+    scrollTo: function (hashtag) {
+      setTimeout(() => { location.href = hashtag }, 1)
+    },
+    handleResize() {
+        this.window.width = window.innerWidth
+        this.window.height = window.innerHeight
+    }
+  },
+  destroyed(){
+    window.removeEventListener('resize', this.handleResize)
+  }
 }
 </script>
 
