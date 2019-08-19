@@ -1,7 +1,7 @@
 <template>
   <div data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
-  <div class="site-wrap"  id="home-section">
+  <div class="site-wrap"  id="home-section" style="padding-top: 1rem;">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -40,7 +40,7 @@
             </nav>
           </div>
 
-          <div class="col-12 col-md-12 d-inline-block d-lg-none ml-md-0" style="padding: 2rem"><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" :style="window.width < 992 ? 'width:60px' : 'width:100px'"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+          <div class="col-12 col-md-12 d-inline-block d-lg-none ml-md-0" style="padding: 1rem; padding-left: 2rem; padding-right: 2rem;"><img src="/images/tente_logo_white_bg.png" class="mb-0" alt="tente-logo" :style="window.width < 992 ? 'width:60px' : 'width:100px'"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
